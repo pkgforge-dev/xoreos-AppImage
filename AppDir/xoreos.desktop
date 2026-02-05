@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=xoreos
-Comment=A reimplementation of BioWare's Aurora engine
+Comment="A reimplementation of BioWare's Aurora engine"
 Exec=xoreos
 Icon=xoreos.ico
 Terminal=false
