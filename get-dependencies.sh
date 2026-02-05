@@ -41,5 +41,5 @@ cmake .. \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     -DCMAKE_INSTALL_PREFIX="/usr"
 make -j$(nproc)
-mv -rv bin/xoreos /usr/bin
-co -rv ../dists/win32/xoreos.ico /usr/share/pixmaps/xoreos.ico
+mv -v bin/xoreos /usr/bin
+cp -rv ../dists/win32/xoreos.ico /usr/share/pixmaps/xoreos.ico
