@@ -3,6 +3,6 @@ Type=Application
 Name=xoreos
 Comment="A reimplementation of BioWare's Aurora engine"
 Exec=xoreos
-Icon=xoreos.ico
+Icon=xoreos
 Terminal=false
 Categories=Game;Action;Adventure
