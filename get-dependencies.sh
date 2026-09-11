@@ -7,15 +7,15 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    boost      \
-    boost-libs \
-    cmake      \
-    faad2      \
-    glew       \
-    libmad     \
-    libvpx     \
-    openal     \
-    sdl2       \
+    boost       \
+    boost-libs  \
+    cmake       \
+    faad2       \
+    glew        \
+    libmad      \
+    libvpx      \
+    openal      \
+    sdl2-compat \
     xvidcore
 
 echo "Installing debloated packages..."
