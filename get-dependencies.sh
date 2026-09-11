@@ -32,8 +32,6 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cd ./xoreos
 mkdir -p build && cd build
-cmake .. \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5
-make -j$(nproc)
+cmake -S ./xoreos -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+cmake --build build -j$(nproc)
 mv -v bin/xoreos ../../AppDir/bin
