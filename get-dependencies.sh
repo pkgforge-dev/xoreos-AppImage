@@ -30,8 +30,6 @@ git clone "$REPO" ./xoreos
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./xoreos
-mkdir -p build && cd build
 cmake -S ./xoreos -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 cmake --build build -j$(nproc)
-mv -v bin/xoreos ../../AppDir/bin
+mv -v build/bin/xoreos ./AppDir/bin
